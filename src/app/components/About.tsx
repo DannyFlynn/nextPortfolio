@@ -36,7 +36,7 @@ const About = ({ aboutRef }: AboutProps) => {
     return (
         <div className='container about mt-5 '>
             <div className='text-center mt-5' ref={aboutRef}>
-                <h2 className='section-title'>About Me</h2>
+                <h2 className='section-title text-center'>About Me</h2>
             </div>
             <MeImage />
             <div className='p-3'>

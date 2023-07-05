@@ -98,9 +98,6 @@ p {
     height: 89vh;
   }
 
-  .about {
-    margin: 0;
-  }
 }
 
 @media screen and (min-width: 1301px) and (max-width: 1900px) {
@@ -113,7 +110,4 @@ p {
     height: 89vh;
   }
 
-  .about {
-    margin: 0;
-  }
 }
