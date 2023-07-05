@@ -17,14 +17,14 @@ const Header = ({ projectRef }: ProjectProps) => {
     return (
         <header className='container d-flex flex-column justify-content-start align-items-start  justify-content-lg-center'>
             <div className='mt-5 mt-lg-0'>
-                <span className='px-2' >Hi, I'm Danny Flynn</span>
-                <h1 className='caption green-text mt-4 px-2 fw-bold'>A Developer on the Rise!</h1>
-                <p className='mt-4 px-2 caption-text'>
-                    <span className='green-text'>"</span>
+                <span className="px-2">Hi, I&apos;m Danny Flynn</span>
+                <h1 className="caption green-text mt-4 px-2 fw-bold">A Developer on the Rise!</h1>
+                <p className="mt-4 px-2 caption-text">
+                    <span className="green-text">&quot;</span>
                     Initiating my coding quest to unlock endless possibilities.
                     <br />
                     As an aspiring developer, I am driven by an insatiable curiosity for technology and a passion for crafting innovative solutions.
-                    <span className='green-text'>"</span>
+                    <span className="green-text">&quot;</span>
                 </p>
                 <div className='px-2 mt-4'>
                     <a href='https://github.com/DannyFlynn' target="_blank">
