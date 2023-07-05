@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  background-color: #212529;
+}
+
+#root {
+  margin: 0;
+}
+
+.spa-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #212529;
+  overflow-x: hidden;
+}
+
+.nav {
+  height: 10%;
+}
+
+.mobile-nav-canvas {
+  width: 100%;
+  background-color: #212529;
+  /* color: white; */
+}
+
+header {
+  height: 95%;
+}
+
+
+span {
+  font-size: 1.4rem;
+}
+
+.caption {
+  font-size: 2.6rem;
+}
+
+.caption-text {
+  font-size: 1.4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
+.section-title,
+.mob-link {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 255, 255);
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+
+.header-btns,
+.project-btns,
+.close-nav-btn {
+  background: none;
+  border: dotted 2px white;
+  border-radius: 5px;
+}
+
+.green-text,
+.close-nav-btn {
+  color: rgb(0, 255, 255);
+}
+
+.about {
+  position: relative;
+}
+
+.phone-arrow-icon {
+  position: fixed;
+  z-index: 1;
+  right: 5%;
+  bottom: 10%;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+
+  .nav {
+    height: 10vh;
+  }
+
+  header {
+    height: 89vh;
+  }
+
+  .about {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1900px) {
+
+  .nav {
+    height: 10vh;
+  }
+
+  header {
+    height: 89vh;
+  }
+
+  .about {
+    margin: 0;
+  }
+}
