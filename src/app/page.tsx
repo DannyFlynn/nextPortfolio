@@ -19,7 +19,7 @@ export default function Home() {
 
 
   return (
-    <div className='spa-container d-flex flex-column'>
+    <div className='spa-container d-flex flex-column justify-content-lg-start align-items-lg-center'>
       <Navigation projectRef={projectRef} skillsRef={skillsRef} aboutRef={aboutRef} contactRef={contactRef} />
       <Header projectRef={projectRef} />
       <About aboutRef={aboutRef} />

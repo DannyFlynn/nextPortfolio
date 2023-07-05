@@ -43,7 +43,7 @@ const Navigation = ({ projectRef, skillsRef, aboutRef, contactRef }: NavProps) =
 
     return (
         <>
-            <Navbar bg="dark" variant="dark" className='nav'>
+            <Navbar bg="dark" variant="dark" className='nav w-100'>
                 <div className='w-100 d-flex p-1'>
                     <Navbar.Brand className='p-1 w-50 d-flex d-flex justify-content-start' href="#home">
                         <span className='green-text'>&lt; / &gt;</span>
