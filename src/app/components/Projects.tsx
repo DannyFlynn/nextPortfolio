@@ -2,11 +2,10 @@
 import React, { useState } from 'react';
 
 import Image from 'next/image';
+import nextEccomerce from '../images/nextEccomerce.png';
 import jetSet from '../images/jetsetHolidays.png';
 import cinema from '../images/cinema.png';
-import quiz from '../images/quiz.png'
-
-
+import quiz from '../images/quiz.png';
 
 type ProjectProps = {
     projectRef: React.RefObject<HTMLDivElement>
@@ -16,7 +15,12 @@ const Projects = ({ projectRef }: ProjectProps) => {
 
     const [projects, setProjects] = useState([
         {
-            id: 1,
+            id: 1, title: 'S.K.A Next E-Commerce',
+            paragraph: "Student E-commerce Project: Crafting an Online Store using Next.js, TypeScript, Stripe, and Redux! I integrated Stripe for secure payment processing. This feature lets customers purchase items. I used custom hooks to break down different functionalities like managing the shopping basket and wishlist. Also My project achieved a Lighthouse score of 90, reflecting my focus on optimizing performance and providing a great user experience. Well-Rounded Accessibility: I aimed for inclusivity by ensuring an accessibility score of 100, making the website usable for all users. Best Practices and SEO: The project adheres to best practices and has a solid SEO foundation, which received perfect scores.",
+            showMore: false, image: nextEccomerce, demo: 'https://vocal-fenglisu-4ca0eb.netlify.app/'
+        },
+        {
+            id: 2,
             title: 'Jetset Holidays', paragraph: `Jetset Holidays is a React TypeScript application that lets you search for awesome vacation options. 
                 I built it using hooks like useState, useContext, useEffect, and useRef,
                  so you know it's super modern and efficient and for the styling I have used bootstrap. With Jetset Holidays, 
@@ -29,7 +33,7 @@ const Projects = ({ projectRef }: ProjectProps) => {
             showMore: false, image: jetSet, demo: 'https://gilded-fairy-bc9a53.netlify.app/',
         },
         {
-            id: 2,
+            id: 3,
             title: 'Cinema', paragraph: `MovieBuff a dynamic movie search and selection platform built using React JS. The project features seamless API integration using Axios and the useEffect hook, ensuring a smooth and up-to-date user experience. Whether searching for the latest popular releases or diving into the highest rated films, this platform provides a seamless browsing experience. The useEffect hook updates the content seamlessly, providing the user with real-time information on the selected movie options. With its intuitive design and dynamic functionality, this project offers a user-friendly solution for all your movie search needs. Simply click the picture for a live preview and experience the power of React JS and Axios for yourself.`,
             showMore: false, image: cinema, demo: 'https://comforting-bubblegum-0d832a.netlify.app/'
         }
