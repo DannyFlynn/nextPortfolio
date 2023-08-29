@@ -70,12 +70,12 @@ const Projects = ({ projectRef }: ProjectProps) => {
                     {projects[0]['showMore'] === false ? (
                         <div>
                             <p className='mt-3'>{projects[0]['paragraph'].substring(0, 100)}
-                            </p><button className='green-text project-btns p-2' onTouchEnd={() => showFullText(1)}>Show More</button>
+                            </p><button className='green-text project-btns p-2' onTouchEnd={() => showFullText(0)}>Show More</button>
                         </div>) : (
                         <div>
                             <p className='mt-3'>{projects[0]['paragraph']}
                             </p>
-                            <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(1)}>Show Less</button>
+                            <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(0)}>Show Less</button>
 
                         </div>)}
                 </div>
