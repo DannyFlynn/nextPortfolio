@@ -58,10 +58,10 @@ const Projects = ({ projectRef }: ProjectProps) => {
                 <h3 className="section-title my-4">
                     {projects[0]['title']}
                 </h3>
-                <a href='https://gilded-fairy-bc9a53.netlify.app/' target="_blank">
+                <a href='https://vocal-fenglisu-4ca0eb.netlify.app/' target="_blank">
                     <Image
                         className='p-3'
-                        src={jetSet}
+                        src={nextEccomerce}
                         width={250}
                         height={400}
                         alt="project" />
@@ -80,9 +80,35 @@ const Projects = ({ projectRef }: ProjectProps) => {
                         </div>)}
                 </div>
             </div>
-            <div className="p-3 text-center mt-4 d-lg-none">
+            <div className="p-3 text-center d-lg-none" >
                 <h3 className="section-title my-4">
                     {projects[1]['title']}
+                </h3>
+                <a href='https://gilded-fairy-bc9a53.netlify.app/' target="_blank">
+                    <Image
+                        className='p-3'
+                        src={jetSet}
+                        width={250}
+                        height={400}
+                        alt="project" />
+                </a>
+                <div className=' d-block d-lg-none'>
+                    {projects[1]['showMore'] === false ? (
+                        <div>
+                            <p className='mt-3'>{projects[1]['paragraph'].substring(0, 100)}
+                            </p><button className='green-text project-btns p-2' onTouchEnd={() => showFullText(1)}>Show More</button>
+                        </div>) : (
+                        <div>
+                            <p className='mt-3'>{projects[1]['paragraph']}
+                            </p>
+                            <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(1)}>Show Less</button>
+
+                        </div>)}
+                </div>
+            </div>
+            <div className="p-3 text-center mt-4 d-lg-none">
+                <h3 className="section-title my-4">
+                    {projects[2]['title']}
                 </h3>
                 <a href='https://comforting-bubblegum-0d832a.netlify.app/' target="_blank">
                     <Image
@@ -93,14 +119,14 @@ const Projects = ({ projectRef }: ProjectProps) => {
                         alt="project" />
                 </a>
                 <div className=' d-block d-lg-none'>
-                    {projects[1]['showMore'] === false ? (
+                    {projects[2]['showMore'] === false ? (
                         <div>
-                            <p className='mt-3'>{projects[1]['paragraph'].substring(0, 100)}
+                            <p className='mt-3'>{projects[2]['paragraph'].substring(0, 100)}
                             </p>
                             <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(2)}>Show More</button>
                         </div>) : (
                         <div>
-                            <p className='mt-3'>{projects[1]['paragraph']}
+                            <p className='mt-3'>{projects[2]['paragraph']}
                             </p>
                             <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(2)}>Show Less</button>
                         </div>)}
