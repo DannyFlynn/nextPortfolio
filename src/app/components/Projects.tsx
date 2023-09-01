@@ -67,17 +67,10 @@ const Projects = ({ projectRef }: ProjectProps) => {
                         alt="project" />
                 </a>
                 <div className=' d-block d-lg-none'>
-                    {projects[0]['showMore'] === false ? (
-                        <div>
-                            <p className='mt-3'>{projects[0]['paragraph'].substring(0, 100)}
-                            </p><button className='green-text project-btns p-2' onTouchEnd={() => showFullText(1)}>Show More</button>
-                        </div>) : (
-                        <div>
-                            <p className='mt-3'>{projects[0]['paragraph']}
-                            </p>
-                            <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(1)}>Show Less</button>
-
-                        </div>)}
+                    <div>
+                        <p className='mt-3'>{projects[0]['showMore'] === false ? projects[0]['paragraph'].substring(0, 100) : projects[0]['paragraph']}
+                        </p><button className='green-text project-btns p-2' onTouchEnd={(e) => { e.preventDefault(); showFullText(1) }}>{projects[0]['showMore'] === false ? 'Show more' : 'Show less'}</button>
+                    </div>
                 </div>
             </div>
             <div className="p-3 text-center d-lg-none" >
@@ -93,17 +86,10 @@ const Projects = ({ projectRef }: ProjectProps) => {
                         alt="project" />
                 </a>
                 <div className=' d-block d-lg-none'>
-                    {projects[1]['showMore'] === false ? (
-                        <div>
-                            <p className='mt-3'>{projects[1]['paragraph'].substring(0, 100)}
-                            </p><button className='green-text project-btns p-2' onTouchEnd={() => showFullText(2)}>Show More</button>
-                        </div>) : (
-                        <div>
-                            <p className='mt-3'>{projects[1]['paragraph']}
-                            </p>
-                            <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(2)}>Show Less</button>
-
-                        </div>)}
+                    <div>
+                        <p className='mt-3'>{projects[1]['showMore'] === false ? projects[1]['paragraph'].substring(0, 100) : projects[1]['paragraph']}
+                        </p><button className='green-text project-btns p-2' onTouchEnd={(e) => { e.preventDefault(); showFullText(2) }}>{projects[1]['showMore'] === false ? 'Show more' : 'Show less'}</button>
+                    </div>
                 </div>
             </div>
             <div className="p-3 text-center mt-4 d-lg-none">
@@ -119,17 +105,10 @@ const Projects = ({ projectRef }: ProjectProps) => {
                         alt="project" />
                 </a>
                 <div className=' d-block d-lg-none'>
-                    {projects[2]['showMore'] === false ? (
-                        <div>
-                            <p className='mt-3'>{projects[2]['paragraph'].substring(0, 100)}
-                            </p>
-                            <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(3)}>Show More</button>
-                        </div>) : (
-                        <div>
-                            <p className='mt-3'>{projects[2]['paragraph']}
-                            </p>
-                            <button className='green-text project-btns p-2' onTouchEnd={() => showFullText(3)}>Show Less</button>
-                        </div>)}
+                    <div>
+                        <p className='mt-3'>{projects[2]['showMore'] === false ? projects[2]['paragraph'].substring(0, 100) : projects[2]['paragraph']}
+                        </p><button className='green-text project-btns p-2' onTouchEnd={(e) => { e.preventDefault(); showFullText(3) }}>{projects[2]['showMore'] === false ? 'Show more' : 'Show less'}</button>
+                    </div>
                 </div>
             </div>
             {/*end small screens and mid*/}
