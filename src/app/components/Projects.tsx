@@ -105,7 +105,7 @@ const Projects = ({ projectRef }: ProjectProps) => {
                 <a href='https://comforting-bubblegum-0d832a.netlify.app/' target="_blank">
                     <Image
                         className='p-3'
-                        src={cinema}
+                        src={nextJsMovies}
                         width={250}
                         height={400}
                         alt="project" />
@@ -114,6 +114,25 @@ const Projects = ({ projectRef }: ProjectProps) => {
                     <div>
                         <p className='mt-3'>{projects[2]['showMore'] === false ? projects[2]['paragraph'].substring(0, 100) : projects[2]['paragraph']}
                         </p><button className='green-text project-btns p-2' onTouchEnd={(e) => { e.preventDefault(); showFullText(3) }}>{projects[2]['showMore'] === false ? 'Show more' : 'Show less'}</button>
+                    </div>
+                </div>
+                <div className="p-3 text-center mt-4 d-lg-none">
+                    <h3 className="section-title my-4">
+                        {projects[3]['title']}
+                    </h3>
+                    <a href='https://comforting-bubblegum-0d832a.netlify.app/' target="_blank">
+                        <Image
+                            className='p-3'
+                            src={cinema}
+                            width={250}
+                            height={400}
+                            alt="project" />
+                    </a>
+                    <div className=' d-block d-lg-none'>
+                        <div>
+                            <p className='mt-3'>{projects[3]['showMore'] === false ? projects[3]['paragraph'].substring(0, 100) : projects[3]['paragraph']}
+                            </p><button className='green-text project-btns p-2' onTouchEnd={(e) => { e.preventDefault(); showFullText(4) }}>{projects[3]['showMore'] === false ? 'Show more' : 'Show less'}</button>
+                        </div>
                     </div>
                 </div>
             </div>
