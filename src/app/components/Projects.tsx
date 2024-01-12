@@ -6,6 +6,7 @@ import nextEccomerce from '../images/nextEccomerce.png';
 import jetSet from '../images/jetsetHolidays.png';
 import cinema from '../images/cinema.png';
 import quiz from '../images/quiz.png';
+import nextJsMovies from '../images/nextjs_movies.png'
 
 type ProjectProps = {
     projectRef: React.RefObject<HTMLDivElement>
@@ -34,6 +35,11 @@ const Projects = ({ projectRef }: ProjectProps) => {
         },
         {
             id: 3,
+            title: 'NextJS_Movies', paragraph: `Next.js Movies is a TypeScript-driven web application crafted with Next.js and Axios. It introduces a security layer by prompting users to select from two options before gaining access to the main content, thereby preventing URL tampering. The application seamlessly integrates with The Movie Database (TMDb) via Axios for fetching movie data. A responsive video player enhances the user experience on larger screens, and pagination ensures smooth navigation through a collection of movies. With a concise project structure, including key components like VideoPlayer and Pagination, Next.js Movies offers a clean and engaging platform for exploring movie content.`,
+            showMore: false, image: nextJsMovies, demo: 'https://statuesque-khapse-537fcf.netlify.app/'
+        },
+        {
+            id: 4,
             title: 'Cinema', paragraph: `MovieBuff a dynamic movie search and selection platform built using React JS. The project features seamless API integration using Axios and the useEffect hook, ensuring a smooth and up-to-date user experience. Whether searching for the latest popular releases or diving into the highest rated films, this platform provides a seamless browsing experience. The useEffect hook updates the content seamlessly, providing the user with real-time information on the selected movie options. With its intuitive design and dynamic functionality, this project offers a user-friendly solution for all your movie search needs. Simply click the picture for a live preview and experience the power of React JS and Axios for yourself.`,
             showMore: false, image: cinema, demo: 'https://comforting-bubblegum-0d832a.netlify.app/'
         }
